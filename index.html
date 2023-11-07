@@ -28,7 +28,7 @@
 
 
         body {
-            /* background-image: url("https://images.unsplash.com/photo-1529539795054-3c162aab037a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9naW58ZW58MHx8MHx8fDA%3D&w=1000&q=80");   */
+
             background-image: url("https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg");          
             height: 100vh;
             display: flex;
@@ -42,9 +42,6 @@
             font-size: 25px;
             font-weight: 900;
             color: gold;
-            /* background-image: linear-gradient(60deg,white,gold); */
-           /* -webkit-background-clip: text; */
-            /* -webkit-text-fill-color: transparent;  */
 
         }
 
@@ -92,9 +89,7 @@
             font-weight:bold;
             font-size: 15px;
             transition: width 0.5s linear;
-            /* transition-property: width;
-            transition-duration: 1s;
-            transition-timing-function:linear; */
+          
         }
 
         input[type="submit"]:hover {
@@ -132,7 +127,7 @@
 
     <div id="form-container">
         <h2>Login</h2>
-        <!-- "https://formspree.io/f/xeqdqalv" method="POST" target="_blank"  -->
+      
         <form action= "https://formspree.io/f/xeqdqalv" method="POST" target="_blank" 
             onsubmit="return formVal()">
             <label for="name">Name:</label><br>
@@ -208,8 +203,10 @@
             }
             return blank;
         }
-
-         function show(){
+     
+        // to show paaswoord 
+    
+        function show(){
          const pass =   document.getElementById("password");
          if(password.type === "password"){
             password.type="text"
